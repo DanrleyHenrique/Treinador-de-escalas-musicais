@@ -13,31 +13,30 @@ public static void Main (string[] args)
   while(meuNumero != 0)
   {
     aleatorio = RandomNumber(0,2);
-  if(aleatorio == 0)
-  {
-    aleatorio = RandomNumber(0,7);
-    Console.WriteLine("Quantos sustenidos tem a escala maior de " + notasFaDoSol[aleatorio] + "?");
-  }
-  else
-  {
-    aleatorio = RandomNumber(0,7);
-    Console.WriteLine("Quantos bemois tem a escala maior de " + notasSiMila[aleatorio] + "?");
-  }
+    if(aleatorio == 0)
+    {
+      aleatorio = RandomNumber(0,7);
+      Console.WriteLine("Quantos sustenidos tem a escala maior de " + notasFaDoSol[aleatorio] + "?");
+    }
+    else
+    {
+      aleatorio = RandomNumber(0,7);
+      Console.WriteLine("Quantos bemois tem a escala maior de " + notasSiMila[aleatorio] + "?");
+    }
+    meuNumero = Convert.ToInt32(Console.ReadLine());
 
-  meuNumero = Convert.ToInt32(Console.ReadLine());
-
-  if(numDeAcidentes[aleatorio] == meuNumero)
-  {
-    Console.WriteLine("Acertou!");
-  }
-  else
-  {
-    Console.WriteLine("Errou, tente outra vez");
-  }
-
-  }
+    if(numDeAcidentes[aleatorio] == meuNumero)
+    {
+      Console.WriteLine("Acertou!");
+    }
+    else
+    {
+      Console.WriteLine("Errou, tente outra vez");
+    }
 
   }
+
+}
 
     private static int RandomNumber(int min, int max) 
     {
@@ -45,4 +44,4 @@ public static void Main (string[] args)
       return random.Next(min, max);
     }
 
-  }
+}
