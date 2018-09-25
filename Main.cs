@@ -26,22 +26,20 @@ public static void Main (string[] args)
     meuNumero = Convert.ToInt32(Console.ReadLine());
 
     if(numDeAcidentes[aleatorio] == meuNumero)
-    {
       Console.WriteLine("Acertou!");
-    }
+    else if(meuNumero == 0)
+      Console.WriteLine("Volte sempre!");
     else
-    {
       Console.WriteLine("Errou, tente outra vez");
-    }
 
   }
 
 }
 
-    private static int RandomNumber(int min, int max) 
-    {
-      Random random = new Random();
-      return random.Next(min, max);
-    }
+  private static int RandomNumber(int min, int max) 
+  {
+    Random random = new Random();
+    return random.Next(min, max);
+  }
 
 }
