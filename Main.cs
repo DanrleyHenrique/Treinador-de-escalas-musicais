@@ -5,7 +5,7 @@ class MainClass {
 public static void Main (string[] args)
 {
   string[] notasFaDoSol = new string[]{"Sol", "Ré", "Lá", "Mi", "Si", "Fá#", "Dó#"};
-  int[] numDeAcidentes = new int[]{1,2,3,4,5,6,7};
+  //int[] numDeAcidentes = new int[]{1,2,3,4,5,6,7};
   string[] notasSiMila = new string[]{"Fá", "Sib", "Mib", "Láb", "Réb", "Solb", "Dób"};
   int aleatorio;
   int meuNumero = 1;
@@ -25,7 +25,7 @@ public static void Main (string[] args)
     }
     meuNumero = Convert.ToInt32(Console.ReadLine());
 
-    if(numDeAcidentes[aleatorio] == meuNumero)
+    if(aleatorio + 1 == meuNumero)
       Console.WriteLine("Acertou!");
     else if(meuNumero == 0)
       Console.WriteLine("Volte sempre!");
